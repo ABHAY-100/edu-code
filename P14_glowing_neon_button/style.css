@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #050801;
+}
+
+a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 25px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: #FFFF33;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+a:hover{
+    background: #FFFF33;
+    color: #050801;
+    box-shadow: 0 0 5px #FFFF33, 0 0 25px #FFFF33, 0 0 50px #FFFF33, 0 0 200px #FFFF33;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+    /* style for reflection */
+}
+
+a span{
+    display: block;
+    position: absolute;
+}
+
+a span:nth-child(1){
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFFF33);
+    animation: span_1 1s linear infinite;
+}
+
+@keyframes span_1 {
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: 0%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FFFF33);
+    animation: span_2 1s linear 0.25s infinite;
+}
+
+@keyframes span_2 {
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FFFF33);
+    animation: span_3 1s linear 0.50s infinite;
+}
+
+@keyframes span_3 {
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: 0%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FFFF33);
+    animation: span_4 1s linear 0.75s infinite;
+}
+
+@keyframes span_4 {
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}

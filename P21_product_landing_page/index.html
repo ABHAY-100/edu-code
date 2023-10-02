@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="/assets/icon.png" alt="Original Trombones" id="header-img" />
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how_it_works" class="nav-link">How It Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+        <ion-icon name="menu-outline"></ion-icon>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h3>Stay tuned for exciting updates !</h3>
+      <p class="sub-title">
+        Share your email to be part of the Original Trumpones community.
+      </p>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          placeholder="Enter Your Email ID"
+          id="email"
+          name="email"
+        />
+        <input type="submit" value="Get Started" id="submit" />
+      </form>
+      <p id="acknowledgement">
+        By clicking the "Get Started" you agree to our
+        <a href="#">Terms Of Service</a> and <a href="#">Privacy Policy</a>
+      </p>
+    </section>
+
+    <section id="features">
+      <h3>Explore What Sets Us Apart!</h3>
+      <div class="box">
+        <div class="icon">
+          <ion-icon name="flame"></ion-icon>
+        </div>
+        <div class="details">
+          <h5>Premium Materials</h5>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <ion-icon name="car"></ion-icon>
+        </div>
+        <div class="details">
+          <h5>Fast Shipping</h5>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <ion-icon name="battery-full"></ion-icon>
+        </div>
+        <div class="details">
+          <h5>Quality Assurance</h5>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how_it_works">
+      <h3>A Visual Guide to How It Works</h3>
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>Experience Trombones in Action</p>
+    </section>
+
+    <section id="pricing">
+      <h3>Our Product's Value in Detail</h3>
+      <div class="pricing-table">
+        <div class="basic box">
+          <h2 class="title">TENOR TROMBONE</h2>
+          <div class="view">
+            <div class="cost">
+              <p class="amount">$599</p>
+            </div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Harum, beatae laudantium.</li>
+              <li>Odit, fugit saepe.</li>
+              <li>Harum, veniam suscipit!</li>
+              <li>A, aut veritatis!</li>
+              <li>Aliquid, quasi repellat!</li>
+            </ul>
+          </div>
+          <div class="button">
+            <button type="submit">SELECT</button>
+          </div>
+        </div>
+
+        <div class="standard box">
+          <h2 class="title">BASS TROMBONE</h2>
+          <div class="view">
+            <div class="cost">
+              <p class="amount">$799</p>
+            </div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Harum, beatae laudantium.</li>
+              <li>Odit, fugit saepe.</li>
+              <li>Harum, veniam suscipit!</li>
+              <li>A, aut veritatis!</li>
+              <li>Aliquid, quasi repellat!</li>
+            </ul>
+          </div>
+          <div class="button">
+            <button type="submit">SELECT</button>
+          </div>
+        </div>
+
+        <div class="business box">
+          <h2 class="title">VALVE TROMBONE</h2>
+          <div class="view">
+            <div class="cost">
+              <p class="amount">$1299</p>
+            </div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Harum, beatae laudantium.</li>
+              <li>Odit, fugit saepe.</li>
+              <li>Harum, veniam suscipit!</li>
+              <li>A, aut veritatis!</li>
+              <li>Aliquid, quasi repellat!</li>
+            </ul>
+          </div>
+          <div class="button">
+            <button type="submit">SELECT</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+
+    <!-- JS for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--pale_gray);
+}
+
+:root{
+    --charcoal_gray: #222427;
+    --pale_gray: #E0E0E0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: var(--pale_gray);
+}
+
+#main{
+    margin: 100px auto;
+    padding: 30px 10px;
+    height: fit-content;
+    width: 700px;
+    border-radius: 30px;
+    text-align: center;
+
+    background: var(--charcoal_gray);
+}
+
+#title{
+    font-size: 3em;
+}
+
+#sub-title{
+    font-size: 1em;
+    margin-top: -8px;
+}
+
+#image{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: auto;
+    border-radius: 30px;
+}
+
+#img-caption{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+#tribute-info_title{
+    margin: 80px auto 50px;
+    padding: 10px 50px;
+    width: fit-content;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 50px;
+
+    background-color: var(--pale_gray);
+    color: var(--charcoal_gray);
+}
+
+#timeline{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+li{
+    margin-top: 15px;
+}
+
+#tribute-info_quote{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 550px;
+    line-height: 27px;
+    font-size: 0.9em;
+    text-align: justify;
+    border-radius: 20px;
+
+    background: var(--pale_gray);
+    color: var(--charcoal_gray);
+}
+
+#more{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+#more a{
+    text-decoration: none;
+    border-bottom: 2px solid var(--pale_gray);
+}
+
+#more a:hover{
+    transition: all ease 0.5s;
+    color: #ffff00;
+    border-bottom: 2px solid #ffff00;
+}

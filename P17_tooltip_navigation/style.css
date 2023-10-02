@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: rgba(59, 255, 207, 0.4);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    min-height: 400px;
+    height: fit-content;
+    margin: 10px 20px;
+    padding: 40px 50px;
+    line-height: 35px;
+    border-radius: 20px;
+    font-size: 1em;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.8);
+
+    background: #2A313B;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container p a{
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #3BFFCF;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+a:hover, a:focus{
+    color: #3BFFCF !important;
+}
+
+a:active{
+    background: rgba(59, 255, 207, 0.15);
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    pointer-events: none;
+    top: 0%;
+    left: 0%;
+    transform: translate(-22%, -40px);
+    transition: all 0.3s ease;
+
+    color: #2A313B;
+    background: #3BFFCF;
+    opacity: 0;
+}
+
+a:hover span{
+    opacity: 1;
+}
+
+span::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: translateY(70%) rotate(45deg);
+
+    background: #3BFFCF;
+    z-index: -1;
+}

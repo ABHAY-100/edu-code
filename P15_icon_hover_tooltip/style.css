@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: #c1c1c1;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 500px;
+    padding: 10px 0;
+    margin: 0 20px;
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.holder{
+    position: relative;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 2em;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 2em;
+    
+    transition: all 0.5s ease;
+}
+
+.tooltip{
+    position: absolute;
+    padding: 5px 20px;
+    top: 0%;
+    left: 0%;
+    transform: translate(-25%, -35px);
+    font-size: 1em;
+    border-radius: 50px;
+    color: #FFF;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
+}
+
+.tooltip::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: translate(2rem, 15px) rotate(45deg);
+    z-index: -2;
+    outline: none;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.twitter .tooltip::before,
+.reddit .tooltip::before{
+    transform: translate(1.7rem, 15px) rotate(45deg);
+}
+
+.github .tooltip::before{
+    transform: translate( 1.6rem, 15px) rotate(45deg);
+}
+
+.icon:hover ~ .tooltip{
+    transform: translate(-25%, -60px) ;
+    opacity: 1;
+}
+
+.icon:hover{
+    color: #FFF;
+}
+
+.facebook .icon:hover,
+.facebook .icon:hover ~ .tooltip,
+.facebook .icon:hover ~ .tooltip::before{
+    background: #3B5999;
+}
+
+.twitter .icon:hover,
+.twitter .icon:hover ~ .tooltip,
+.twitter .icon:hover ~ .tooltip::before{
+    background: #46C1F6;
+}
+
+.instagram .icon:hover,
+.instagram .icon:hover ~ .tooltip,
+.instagram .icon:hover ~ .tooltip::before{
+    background: #e1306c;
+}
+
+.github .icon:hover ~ .tooltip,
+.github .icon:hover ~ .tooltip::before,
+.github .icon:hover{
+    background: #333;
+}
+
+.reddit .icon:hover,
+.reddit .icon:hover ~ .tooltip,
+.reddit .icon:hover ~ .tooltip::before{
+    background: #FF4500;
+}

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #a0cecb;
+}
+
+.content{
+    height: 16.45cm;
+    width: 7.59cm;
+    background: #000;
+    border-radius: 15px;
+}
+
+.thumbnail img{
+    width: 7.59cm;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.header{
+    margin-top: -6px;
+    background: #fff;
+    width: 100%;
+    height: 1.5px;
+}
+
+.fold{
+    margin: 10px auto 0px;
+    background: #fff;
+    opacity: 0.25;
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+}
+
+.text{
+    padding: 5px;
+}
+
+.heading{
+    margin: 10px;
+    color: #fff;
+    font-size: 0.75em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h1{
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.heading button{
+    display: flex;
+    align-items: center;
+
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.heading button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.timeline button p{
+    margin: auto 6px;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.timeline button{
+    padding: 5px;
+    height: 25px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.select{
+    background:rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.timeline .select:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.notice{
+    margin-top: 10px;
+    padding: 10px 5px;
+    line-height: 13px;
+    margin-left: -5px;
+    width: 100%;
+    color: #fff;
+    background:rgba(255, 255, 255, 0.1);
+    font-size: 0.6em;
+}
+
+.notice p{
+    text-indent: 10px;
+}
+
+.notice p span button{
+    border: none;
+    background: transparent;
+    color: #41a1e6;
+    font-size: inherit;
+    margin-left: 10px;
+}
+
+.comment{
+    margin-top: 10px;
+}
+
+.comment_main{
+    border-radius: 2px;
+}
+
+.comment_main:hover{
+    background: rgba(255, 255, 255, 0.03);
+    transition: 0.5s;
+}
+
+.profile img{
+    float: left;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.line1{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.6em;
+}
+
+.line2{
+    margin-top: 5px;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.6em;
+}
+
+.comment_main{
+    text-indent: 15px;
+}
+
+.other{
+    margin-top: 5px;
+    margin-left: 30px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.other ion-icon{
+    color: #fff;
+    float: left;
+}
+
+.other button p{
+    font-size: 0.7em;
+    color: #fff;
+    text-indent: 5px;
+}
+
+.other button{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1em;
+    width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.user2{
+    margin-top: 15px;
+}
+
+.replies p{
+    color: #41a1e6;
+    font-size: 0.8em;
+    margin: 5px 5px 10px 35px;
+}
+
+.replies button{
+    background: transparent;
+    border: none;
+    height: fit-content;
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.replies button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.end{
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    height: 2px;
+    border-radius: 4px;
+}
+
+.post{
+    padding: 8px 5px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.6em;
+}
+
+.post img{
+    width: 25px;
+    margin-top: 3px;
+    margin-left: -2px;
+}
+
+.post input{
+    position: relative;
+    width: 220px;
+    height: 20px;
+    left: 15px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    text-indent: 5px;
+    font-size: 1em;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
