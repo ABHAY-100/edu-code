@@ -2,7 +2,7 @@
 
 Check out my collection of coding projects from when I started learning web development!
 
-All this project's have been hosted at [Codepen](https://codepen.io/itsabhaybal)
+All this project's have been hosted at [Codepen](https://codepen.io/itsabhaybal).
 
 ## Projects
 
